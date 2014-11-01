@@ -1,0 +1,23 @@
+{
+  "name": "awesomewm-themes",
+  "version": "0.0.0",
+  "description": "This is a collection of themes for Awesome WM (v3.5) I found all over the net. I've cleaned up and improved the themes a little by removing absolute paths and adding fallback wallpapers.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/muchweb/awesomewm-themes.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/muchweb/awesomewm-themes/issues"
+  },
+  "homepage": "https://github.com/muchweb/awesomewm-themes",
+  "dependencies": {
+    "glob": "^4.0.5",
+    "handlebars": "^2.0.0"
+  }
+}

@@ -1,0 +1,18 @@
+{
+    "font":          "sans 8",
+
+    "bg_normal":     "#222222",
+    "bg_focus":      "#d8d8d8",
+    "bg_urgent":     "#d02e54",
+    "bg_minimize":   "#444444",
+
+    "fg_normal":     "#cccccc",
+    "fg_focus":      "#000000",
+    "fg_urgent":     "#ffffff",
+    "fg_minimize":   "#ffffff",
+
+    "border_width":  "2",
+    "border_normal": "#747474",
+    "border_focus":  "#ce2c51",
+    "border_marked": "#91231c"
+}
