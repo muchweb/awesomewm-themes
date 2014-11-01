@@ -1,0 +1,193 @@
+all: lib/index.js
+
+lib/index.js: ./node_modules/.bin/coffee src/index.coffee
+	mkdir -p lib
+	./node_modules/.bin/coffee --map --compile --output lib src
+
+./node_modules/.bin/coffee:
+	npm install
+
+themes: generated/anon generated/arch generated/bamboo generated/bio generated/blackburn generated/blue generated/blue-black-red generated/blue-black-red-2 generated/brown generated/byte generated/cool-blue generated/copland generated/crown generated/dk-grey generated/dremora generated/dunzor generated/dunzor2 generated/dust generated/dwm generated/elric generated/fence generated/fhuizing generated/foo generated/gray generated/green-owl generated/grey generated/grey-new generated/grey-old generated/him generated/holo generated/icons generated/lined generated/matrix generated/multicolor generated/muted-dream-tree generated/my-default generated/my-sky generated/my-zenburn generated/niceandclean generated/obscur generated/powerarrow-darker generated/rainbow generated/rbown generated/redhalo generated/roig generated/sky-grey generated/smoked generated/snow generated/spectrum generated/steamburn generated/strict generated/sunjack generated/tree generated/vinyl generated/wabbit generated/wmii generated/wombat generated/worm generated/zenburn-custom generated/zenburn-red
+
+clean:
+	rm -rf generated
+
+generated/anon: lib/index.js themes/anon.json
+	lib/index.js -o generated/anon themes/anon.json
+
+generated/arch: lib/index.js themes/arch.json
+	lib/index.js -o generated/arch themes/arch.json
+
+generated/bamboo: lib/index.js themes/bamboo.json
+	lib/index.js -o generated/bamboo themes/bamboo.json
+
+generated/bio: lib/index.js themes/bio.json
+	lib/index.js -o generated/bio themes/bio.json
+
+generated/blackburn: lib/index.js themes/blackburn.json
+	lib/index.js -o generated/blackburn themes/blackburn.json
+
+generated/blue: lib/index.js themes/blue.json
+	lib/index.js -o generated/blue themes/blue.json
+
+generated/blue-black-red: lib/index.js themes/blue-black-red.json
+	lib/index.js -o generated/blue-black-red themes/blue-black-red.json
+
+generated/blue-black-red-2: lib/index.js themes/blue-black-red-2.json
+	lib/index.js -o generated/blue-black-red-2 themes/blue-black-red-2.json
+
+generated/brown: lib/index.js themes/brown.json
+	lib/index.js -o generated/brown themes/brown.json
+
+generated/byte: lib/index.js themes/byte.json
+	lib/index.js -o generated/byte themes/byte.json
+
+generated/cool-blue: lib/index.js themes/cool-blue.json
+	lib/index.js -o generated/cool-blue themes/cool-blue.json
+
+generated/copland: lib/index.js themes/copland.json
+	lib/index.js -o generated/copland themes/copland.json
+
+generated/crown: lib/index.js themes/crown.json
+	lib/index.js -o generated/crown themes/crown.json
+
+generated/dk-grey: lib/index.js themes/dk-grey.json
+	lib/index.js -o generated/dk-grey themes/dk-grey.json
+
+generated/dremora: lib/index.js themes/dremora.json
+	lib/index.js -o generated/dremora themes/dremora.json
+
+generated/dunzor: lib/index.js themes/dunzor.json
+	lib/index.js -o generated/dunzor themes/dunzor.json
+
+generated/dunzor2: lib/index.js themes/dunzor2.json
+	lib/index.js -o generated/dunzor2 themes/dunzor2.json
+
+generated/dust: lib/index.js themes/dust.json
+	lib/index.js -o generated/dust themes/dust.json
+
+generated/dwm: lib/index.js themes/dwm.json
+	lib/index.js -o generated/dwm themes/dwm.json
+
+generated/elric: lib/index.js themes/elric.json
+	lib/index.js -o generated/elric themes/elric.json
+
+generated/fence: lib/index.js themes/fence.json
+	lib/index.js -o generated/fence themes/fence.json
+
+generated/fhuizing: lib/index.js themes/fhuizing.json
+	lib/index.js -o generated/fhuizing themes/fhuizing.json
+
+generated/foo: lib/index.js themes/foo.json
+	lib/index.js -o generated/foo themes/foo.json
+
+generated/gray: lib/index.js themes/gray.json
+	lib/index.js -o generated/gray themes/gray.json
+
+generated/green-owl: lib/index.js themes/green-owl.json
+	lib/index.js -o generated/green-owl themes/green-owl.json
+
+generated/grey: lib/index.js themes/grey.json
+	lib/index.js -o generated/grey themes/grey.json
+
+generated/grey-new: lib/index.js themes/grey-new.json
+	lib/index.js -o generated/grey-new themes/grey-new.json
+
+generated/grey-old: lib/index.js themes/grey-old.json
+	lib/index.js -o generated/grey-old themes/grey-old.json
+
+generated/him: lib/index.js themes/him.json
+	lib/index.js -o generated/him themes/him.json
+
+generated/holo: lib/index.js themes/holo.json
+	lib/index.js -o generated/holo themes/holo.json
+
+generated/icons: lib/index.js themes/icons.json
+	lib/index.js -o generated/icons themes/icons.json
+
+generated/lined: lib/index.js themes/lined.json
+	lib/index.js -o generated/lined themes/lined.json
+
+generated/matrix: lib/index.js themes/matrix.json
+	lib/index.js -o generated/matrix themes/matrix.json
+
+generated/multicolor: lib/index.js themes/multicolor.json
+	lib/index.js -o generated/multicolor themes/multicolor.json
+
+generated/muted-dream-tree: lib/index.js themes/muted-dream-tree.json
+	lib/index.js -o generated/muted-dream-tree themes/muted-dream-tree.json
+
+generated/my-default: lib/index.js themes/my-default.json
+	lib/index.js -o generated/my-default themes/my-default.json
+
+generated/my-sky: lib/index.js themes/my-sky.json
+	lib/index.js -o generated/my-sky themes/my-sky.json
+
+generated/my-zenburn: lib/index.js themes/my-zenburn.json
+	lib/index.js -o generated/my-zenburn themes/my-zenburn.json
+
+generated/niceandclean: lib/index.js themes/niceandclean.json
+	lib/index.js -o generated/niceandclean themes/niceandclean.json
+
+generated/obscur: lib/index.js themes/obscur.json
+	lib/index.js -o generated/obscur themes/obscur.json
+
+generated/powerarrow-darker: lib/index.js themes/powerarrow-darker.json
+	lib/index.js -o generated/powerarrow-darker themes/powerarrow-darker.json
+
+generated/rainbow: lib/index.js themes/rainbow.json
+	lib/index.js -o generated/rainbow themes/rainbow.json
+
+generated/rbown: lib/index.js themes/rbown.json
+	lib/index.js -o generated/rbown themes/rbown.json
+
+generated/redhalo: lib/index.js themes/redhalo.json
+	lib/index.js -o generated/redhalo themes/redhalo.json
+
+generated/roig: lib/index.js themes/roig.json
+	lib/index.js -o generated/roig themes/roig.json
+
+generated/sky-grey: lib/index.js themes/sky-grey.json
+	lib/index.js -o generated/sky-grey themes/sky-grey.json
+
+generated/smoked: lib/index.js themes/smoked.json
+	lib/index.js -o generated/smoked themes/smoked.json
+
+generated/snow: lib/index.js themes/snow.json
+	lib/index.js -o generated/snow themes/snow.json
+
+generated/spectrum: lib/index.js themes/spectrum.json
+	lib/index.js -o generated/spectrum themes/spectrum.json
+
+generated/steamburn: lib/index.js themes/steamburn.json
+	lib/index.js -o generated/steamburn themes/steamburn.json
+
+generated/strict: lib/index.js themes/strict.json
+	lib/index.js -o generated/strict themes/strict.json
+
+generated/sunjack: lib/index.js themes/sunjack.json
+	lib/index.js -o generated/sunjack themes/sunjack.json
+
+generated/tree: lib/index.js themes/tree.json
+	lib/index.js -o generated/tree themes/tree.json
+
+generated/vinyl: lib/index.js themes/vinyl.json
+	lib/index.js -o generated/vinyl themes/vinyl.json
+
+generated/wabbit: lib/index.js themes/wabbit.json
+	lib/index.js -o generated/wabbit themes/wabbit.json
+
+generated/wmii: lib/index.js themes/wmii.json
+	lib/index.js -o generated/wmii themes/wmii.json
+
+generated/wombat: lib/index.js themes/wombat.json
+	lib/index.js -o generated/wombat themes/wombat.json
+
+generated/worm: lib/index.js themes/worm.json
+	lib/index.js -o generated/worm themes/worm.json
+
+generated/zenburn-custom: lib/index.js themes/zenburn-custom.json
+	lib/index.js -o generated/zenburn-custom themes/zenburn-custom.json
+
+generated/zenburn-red: lib/index.js themes/zenburn-red.json
+	lib/index.js -o generated/zenburn-red themes/zenburn-red.json
